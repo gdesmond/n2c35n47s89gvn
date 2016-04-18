@@ -1,0 +1,925 @@
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="assets/themify-icons/themify-icons.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/app.css">
+
+    <style>
+      .clearlist {
+        list-style: none;
+        margin-left: 0;
+      }
+
+      .title-desmond {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+      .title-desmond h1 {
+        font-family: 'Oswald', sans-serif;
+      }
+
+      #menu {
+        border-right: 1px solid #c4c4c4;
+        padding: 10px 20px;
+      }
+      #menu .toggle-button {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 1.8em;
+        color: #262626;
+      }
+      #menu .toggle-button:hover {
+        color: #999999;
+      }
+
+      .des-menu {
+        background: white;
+      }
+      .des-menu li {
+        line-height: 1.5em;
+      }
+      .des-menu li a {
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+        line-height: 1.5em;
+        color: #999999;
+      }
+      .des-menu li a:hover {
+        color: #262626;
+      }
+      .des-menu li a.active {
+        color: #262626;
+      }
+
+      .color {
+        height: 120px;
+        position: relative;
+        margin-bottom: 0.5em;
+      }
+      .color p {
+        position: absolute;
+        padding: 3px 13px;
+        color: #666;
+        background-color: #fff;
+        font-size: 12px;
+        bottom: 0;
+        left: 0.9375em;
+      }
+
+      .color + code {
+        display: inline-block;
+        margin-bottom: 1em;
+      }
+
+      .font-family {
+        font-size: 90px;
+        color: #999999;
+        text-align: center;
+        display: inline-block;
+        margin-right: 1em;
+      }
+      .font-family span {
+        font-size: 16px;
+        display: block;
+        color: #262626;
+        margin-top: -25px;
+      }
+      .font-family.bold {
+        font-weight: bold;
+      }
+      .font-family.themify {
+        font-size: 70px;
+      }
+
+      .title {
+        font-weight: bold;
+        margin: 1.2em 0 1em;
+        font-family: 'Oswald', sans-serif;
+      }
+
+      .off-canvas-content {
+        box-shadow: none;
+        border-left: 1px solid #c4c4c4;
+      }
+
+      #panel {
+        background: white;
+      }
+
+      .slideout-menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        width: 200px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        display: none;
+      }
+
+      .slideout-panel {
+        position: relative;
+        z-index: 1;
+      }
+
+      .slideout-open .slideout-menu {
+        display: block;
+      }
+
+      .slideout-open .toggle-button.main {
+        display: none;
+      }
+
+      .toggle-button.main {
+        font-size: 1.8em;
+        color: white;
+        background: #262626;
+        display: inline-block;
+        padding: 9px 19px;
+        position: fixed;
+        z-index: 1;
+      }
+      .toggle-button.main:hover {
+        background: #999999;
+      }
+
+    </style>
+  </head>
+  <body>
+
+
+
+    <nav id="menu">
+
+      <h4 class="title"><a href="#top">Style guide</a>
+      </h4>
+      <a class="toggle-button"><i class="ti-close"></i></a>
+      <ul class="vertical menu des-menu" data-magellan data-active-class="active">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#colors">Colors</a></li>
+        <li><a href="#typography">Typography</a></li>
+        <li><a href="#buttons">Buttons</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#tables">Tables</a></li>
+        <li><a href="#animations">Animations</a></li>
+      </ul>
+    </nav>
+
+    <main id="panel">
+
+      
+      <div class="expanded row">
+        <a class="toggle-button main"><i class="ti-menu"></i></a>
+      </div>
+      <div class="callout large title-desmond">
+        <div class="row column text-center">
+          <h1>Styleguide web "nem cha" <small>by @gdesmond</small></h1>
+          <h4><p class="subheader">Standards for developing flexible, durable, and sustainable HTML and CSS.</p></h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 columns">
+          <h2 class="title" id="introduction" data-magellan-target="introduction">Introduction</h2>
+          <p>Hello! Welcome to the Styleguide, to make creating and maintaining styleguides easy.</p>
+          <p>There styleguide base on <a href="http://foundation.zurb.com/" target="_blank">Zurb Foundation</a> front-end
+            framework</p>
+          <p>Today, I make a website from my real projects about selling "nem chả", it's a traditional food from Viet nam, Let's discuss about it ^^.</p>
+          <p>My first think about website is we have some type of foods, less than 10 products, so the website must be simple , so I think we need only one page for website.
+            And try to make users can trust about my website products, my skills don't enough to make products card, and I think we don't need it, The customer need simple, why they need to under stand products cart actions.
+            Almost customer want to call our to understand more about products. I think we just input a google form, and a number. That't enough.</p>
+      
+          <hr>
+      
+          <h2 class="title" id="colors" data-magellan-target="colors">Colors</h2>
+          <p>The look and feel of our company and product relies on using a handful of specific colors that help convey
+            meaning and purpose.</p>
+      
+      
+          <h4 class="title">Branding</h4>
+      
+          <div class="row small-up-2 medium-up-3 large-up-5">
+            <div class="column">
+              <div class="color" style="background-color: #d11f01;"><p>.color-primary <kbd>#d11f01</kbd></p></div>
+            </div>
+      
+            <div class="column">
+              <div class="color" style="background-color: #321a0a;"><p>.color-secondary <kbd>#321a0a</kbd></p></div>
+            </div>
+      
+            <div class="column">
+              <div class="color" style="background-color: #ffcc0d;"><p>.color-yellow <kbd>#ffcc0d</kbd></p></div>
+            </div>
+      
+            <div class="column">
+              <div class="color" style="background-color: #efd9b7;"><p>.color-yellow-light <kbd>#efd9b7</kbd></p></div>
+            </div>
+      
+            <div class="column">
+              <div class="color" style="background-color: #6cc644;"><p>.color-success <kbd>#6cc644</kbd></p></div>
+            </div>
+          </div>
+      
+      
+          <h4 class="title">Grayscale</h4>
+      
+          <div class="row small-up-2 medium-up-3 large-up-5">
+            <div class="column">
+              <div class="color" style="background-color: #767676;"><p>.gray-dark <kbd>#767676</kbd></p></div>
+            </div>
+      
+            <div class="column">
+              <div class="color" style="background-color: #999999;"><p>.gray-medium <kbd>#999999</kbd></p></div>
+            </div>
+      
+            <div class="column">
+              <div class="color" style="background-color: #e6e6e6;"><p>.gray-light <kbd>#e6e6e6</kbd></p></div>
+            </div>
+      
+            <div class="column">
+              <div class="color" style="background-color: #c4c4c4;"><p>.gray-border-color <kbd>#c4c4c4</kbd></p></div>
+            </div>
+      
+            <div class="column">
+              <div class="color" style="background-color: #f7f7f7;"><p>.gray-placeholder <kbd>#f7f7f7</kbd></p></div>
+            </div>
+          </div>
+      
+          <hr>
+      
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="small-12 columns">
+          <h2 class="title" id="typography" data-magellan-target="typography">Typography</h2>
+          <p>Headings, paragraphs, blockquotes, lists, and more have some global resets. </p>
+          <h4 class="title">Fonts</h4>
+          <p>Default serif font: Times new roman (windows) -  (Android) -  (iOS)</p>
+      
+          <div class="font-family bold">
+            Aa
+            <span>Bold</span>
+          </div>
+          <div class="font-family">
+            Aa
+            <span>Regular</span>
+          </div>
+      
+          <div class="font-family themify">
+            <i class="ti-arrow-left"></i>
+            <i class="ti-arrow-right"></i>
+            <i class="ti-close"></i>
+            <span>Themify icons</span>
+          </div>
+      
+          <br>
+          <br>
+      
+          <h4 class="title">Headings</h4>
+          <h1>h1. Example heading</h1>
+          <h2>h2. Example heading</h2>
+          <h3>h3. Example heading</h3>
+          <h4>h4. Example heading</h4>
+          <h5>h5. Example heading</h5>
+          <h6>h6. Example heading</h6>
+          <br>
+      
+          <code>h1 {font-size: 48px}</code>
+          <code>h2 {font-size: 40px}</code>
+          <code>h3 {font-size: 31px}</code>
+          <code>h4 {font-size: 25px}</code>
+          <code>h5 {font-size: 20px}</code>
+          <code>h6 {font-size: 16px}</code>
+      
+          <h4 class="title">Body text</h4>
+      
+          <p>This is a paragraph. Paragraphs are preset with a font size, line height and spacing to match the overall
+            vertical rhythm. To show what a paragraph looks like this needs a little more content—so, did you know that there
+            are storms occurring on Jupiter that are larger than the Earth? Pretty cool.</p>
+          <p>Everything you need to know about using the framework.</p>
+      
+          <p>Mặc định font size của tất cả các chữ quy định là 14px;</p>
+          <code>* {font-size: 14px}</code>
+      
+      
+          <h4 class="title">Lists</h4>
+      
+          <div class="row">
+            <div class="small-4 columns">
+              <h5 class="title">Icon list style</h5>
+              <ul class="clearlist">
+                <li><i class="ti-check-box"></i> List item with a much longer description or more content.</li>
+                <li><i class="ti-check"></i> List item</li>
+                <li><i class="ti-reload"></i> List item</li>
+                <li><i class="ti-arrow-circle-right"></i> List item</li>
+                <li><i class="ti-plus"></i> List item</li>
+              </ul>
+            </div>
+            <div class="small-4 columns">
+              <h5 class="title">Ordered style</h5>
+              <ol class="">
+                <li>List item with a much longer description or more content.</li>
+                <li>List item</li>
+                <li>List item
+                  <ol>
+                    <li>Nested list item</li>
+                    <li>Nested list item</li>
+                    <li>Nested list item</li>
+                  </ol>
+                </li>
+                <li>List item</li>
+                <li>List item</li>
+                <li>List item</li>
+              </ol>
+            </div>
+      
+            <div class="small-4 columns">
+              <h5 class="title">Unordered style</h5>
+              <ul>
+                <li>List item with a much longer description or more content.</li>
+                <li>List item</li>
+                <li>List item
+                  <ul>
+                    <li>Nested list item</li>
+                    <li>Nested list item</li>
+                    <li>Nested list item</li>
+                  </ul>
+                </li>
+                <li>List item</li>
+                <li>List item</li>
+                <li>List item</li>
+              </ul>
+            </div>
+      
+          </div>
+      
+          <hr>
+      
+      
+        </div>
+      </div>
+      
+      
+      
+      <div class="row">
+        <div class="small-12 columns">
+          <h2 class="title" id="buttons" data-magellan-target="buttons">Buttons</h2>
+          <p>Buttons are used for actions, like in forms, while textual hyperlinks are used for destinations, or moving from one page to another. </p>
+      
+          <h4 class="title">Default buttons</h4>
+      
+          <a href="" class="button">Mua ngay</a>
+          <a href="" class="button">Save</a>
+          <a href="" class="button">Delete</a>
+      
+          <h4 class="title">Coloring</h4>
+      
+          <a class="secondary button" href="#">Secondary Color</a>
+          <a class="success button" href="#">Success Color</a>
+          <a class="alert button" href="#">Alert Color</a>
+          <a class="warning button" href="#">Warning Color</a>
+          <a class="disabled button" href="#">Disabled Button</a>
+      
+          <h4 class="title">Sizes</h4>
+      
+          <a class="tiny button secondary " href="#">So Tiny</a>
+          <a class="small button success " href="#">So Small</a>
+          <a class="button alert " href="#">So Basic</a>
+          <a class="large button warning " href="#">So Large</a>
+      
+          <h4 class="title">Block buttons</h4>
+      
+          <a class="expanded button" href="#">Such Expand (disable)</a>
+          <a class="button small expanded" href="#">Wow, Small Expand</a>
+      
+          <h4 class="title">Hollow Style</h4>
+      
+          <button class="hollow button" href="#">Primary Color</button>
+          <button class="secondary hollow button" href="#">Secondary Color</button>
+          <button class="success hollow button" href="#">Success Color</button>
+          <button class="alert hollow button" href="#">Alert Color</button>
+          <button class="warning hollow button" href="#">Warning Color</button>
+      
+          <hr>
+        </div>
+      </div>
+      
+      
+      
+      
+      <div class="row">
+        <div class="small-12 columns">
+          <h2 class="title" id="forms" data-magellan-target="forms">Forms</h2>
+          <p>Style individual form controls and utilize common layouts.</p>
+      
+          <h4 class="title">Text Inputs</h4>
+      
+          <form>
+            <div class="row">
+              <div class="medium-6 columns">
+                <label>Input Label
+                  <input type="text" placeholder=".medium-6.columns">
+                </label>
+              </div>
+              <div class="medium-6 columns">
+                <label>Input Label
+                  <input type="text" placeholder=".medium-6.columns">
+                </label>
+              </div>
+            </div>
+          </form>
+      
+      
+          <h4 class="title">Text Areas</h4>
+      
+          <label>
+            What books did you read over summer break?
+            <textarea placeholder="None"></textarea>
+          </label>
+      
+          <h4 class="title">Select Menus</h4>
+      
+          <label>Select Menu
+            <select>
+              <option value="husker">Husker</option>
+              <option value="starbuck">Starbuck</option>
+              <option value="hotdog">Hot Dog</option>
+              <option value="apollo">Apollo</option>
+            </select>
+          </label>
+      
+          <h4 class="title">Checkboxes and Radio Buttons</h4>
+      
+          <div class="row">
+            <fieldset class="large-6 columns">
+              <legend>Choose Your Favorite</legend>
+              <input type="radio" name="pokemon" value="Red" id="pokemonRed" required><label for="pokemonRed">Red</label>
+              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+              <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
+            </fieldset>
+            <fieldset class="large-6 columns">
+              <legend>Check these out</legend>
+              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+              <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+            </fieldset>
+          </div>
+      
+          <h4 class="title">Fieldset Styles</h4>
+      
+          <fieldset class="fieldset">
+            <legend>Check these out</legend>
+            <input id="checkbox12" type="checkbox"><label for="checkbox12">Checkbox 1</label>
+            <input id="checkbox22" type="checkbox"><label for="checkbox22">Checkbox 2</label>
+            <input id="checkbox32" type="checkbox"><label for="checkbox32">Checkbox 3</label>
+          </fieldset>
+      
+          <h4 class="title">Help Text</h4>
+      
+          <label>Password
+            <input type="password" aria-describedby="passwordHelpText">
+          </label>
+          <p class="help-text" id="passwordHelpText">Your password must have at least 10 characters, a number</p>
+      
+          <h4 class="title">Label Positioning</h4>
+      
+          <form>
+            <div class="row">
+              <div class="small-2 columns">
+                <label for="middle-label" class="text-right middle">Label</label>
+              </div>
+              <div class="small-5 columns">
+                <input type="text" id="middle-label" placeholder="Right- and middle-aligned text input">
+              </div>
+            </div>
+          </form>
+      
+          <hr>
+      
+        </div>
+      </div>
+      
+      
+      <div class="row">
+        <div class="small-12 columns">
+          <h2 class="title" id="tables" data-magellan-target="tables">Tables</h2>
+          <p>Style individual form controls and utilize common layouts.</p>
+      
+          <h4 class="title">Basics</h4>
+      
+          <table class="hover">
+            <thead>
+            <tr>
+              <th width="200">Table Header</th>
+              <th>Table Header</th>
+              <th width="150">Table Header</th>
+              <th width="150">Table Header</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+              <td>Content Goes Here</td>
+              <td>Content Goes Here</td>
+            </tr>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+              <td>Content Goes Here</td>
+              <td>Content Goes Here</td>
+            </tr>
+            <tr>
+              <td>Content Goes Here</td>
+              <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+              <td>Content Goes Here</td>
+              <td>Content Goes Here</td>
+            </tr>
+            </tbody>
+          </table>
+      
+          <hr>
+      
+        </div>
+      </div>
+      
+      
+      <div class="row">
+        <div class="small-12 columns">
+          <h2 class="title" id="animations" data-magellan-target="animastions">Animations</h2>
+          <p>Using wow js plugins, more animaions in : <a href="https://daneden.github.io/animate.css/">https://daneden.github.io/animate.css/</a></p>
+      
+          <h4 class="title">Fade In</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow fadeIn" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Fade In Up</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow fadeInUp" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Fade In Down</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow fadeInDown" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Fade In Right</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow fadeInRight" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+      
+          <h4 class="title">Fade In Left</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow fadeInLeft" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+      
+          <h4 class="title">Bounce In</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow bounceIn" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Bounce In Down</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow bounceInDown" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Bounce In Up</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow bounceInUp" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Bounce In Left</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow bounceInLeft" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Bounce In Right</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow bounceInRight" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Slide In Up</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow slideInUp" data-wow-delay="0s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Slide In Down</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow slideInDown" data-wow-delay="0s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Slide In Right</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow slideInRight" data-wow-delay="0s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Slide In Left</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow slideInLeft" data-wow-delay="0s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+      
+          <h4 class="title">Zoom In</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow zoomIn" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Zoom In Down</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow zoomInDown" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+      
+          <h4 class="title">Zoom In Up</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow zoomInUp" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Zoom In Right</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow zoomInRight" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Zoom In Left</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow zoomInLeft" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Bounce</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow bounce" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Flash</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow flash" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Tada</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow tada" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+          <h4 class="title">Swing</h4>
+      
+          <div class="row">
+            <div class="small-3 columns wow swing" data-wow-delay="1s">
+              <img src="assets/img/phone-mockup.png" alt="phone" class="">
+            </div>
+            <div class="small-9 columns">
+              <p>
+                Nihil est enim virtute amabilius, nihil quod magis adliciat ad diligendum, quippe cum propter virtutem et probitatem etiam eos, quos numquam vidimus, quodam modo diligamus. Quis est qui C. Fabrici, M'. Curi non cum caritate aliqua benevola memoriam usurpet, quos numquam viderit? quis autem est, qui Tarquinium Superbum, qui Sp. Cassium, Sp. Maelium non oderit? Cum duobus ducibus de imperio in Italia est decertatum, Pyrrho et Hannibale; ab altero propter probitatem eius non nimis alienos animos habemus, alterum propter crudelitatem semper haec civitas oderit.</p>
+              <p>Quod cum ita sit, paucae domus studiorum seriis cultibus antea celebratae nunc ludibriis ignaviae torpentis exundant, vocali sonu, perflabili tinnitu fidium resultantes. denique pro philosopho cantor et in locum oratoris doctor artium ludicrarum accitur ets instrumenta non levia.</p>
+      
+            </div>
+          </div>
+      
+      
+      
+      
+      
+          <hr>
+      
+        </div>
+      </div>
+      
+
+
+
+    </main>
+
+
+
+    <script src="assets/js/app.js"></script>
+
+    <script>
+      /*JS FOR STYLEGUIDE*/
+      new WOW().init();
+
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 200,
+        'tolerance': 70
+      });
+
+      // Toggle button
+
+      $('.toggle-button').click(function(){
+        slideout.toggle();
+      });
+      /*END JS FOR STYLEGUIDE*/
+    </script>
+  </body>
+</html>

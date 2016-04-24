@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/css/app.css">
 
 </head>
-<body class="">
+<body class="have-popup">
 <!--Header-->
 
 <nav id="menu" class="slideout-menu">
@@ -377,10 +377,18 @@
     <div class="carte__picture">
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" style="background-image: url(assets/img/slider/slider1.jpg);"></div>
-          <div class="swiper-slide" style="background-image: url(assets/img/slider/slider2.jpg);"></div>
-          <div class="swiper-slide" style="background-image: url(assets/img/slider/slider3.jpg);"></div>
-          <div class="swiper-slide" style="background-image: url(assets/img/slider/slider4.jpg);"></div>
+          <div class="swiper-slide swiper-lazy" data-background="assets/img/slider/slider1.jpg">
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide swiper-lazy" data-background="assets/img/slider/slider2.jpg">
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide swiper-lazy" data-background="assets/img/slider/slider3.jpg">
+            <div class="swiper-lazy-preloader"></div>
+          </div>
+          <div class="swiper-slide swiper-lazy" data-background="assets/img/slider/slider4.jpg">
+            <div class="swiper-lazy-preloader"></div>
+          </div>
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
